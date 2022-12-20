@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./source/img/logo.png" />
+    <link rel="stylesheet" href="./source/css/styles.css" />
+
+    <title>Encriptar/Desenciptar</title>
+  </head>
+  <body>
+    <div id="contenedor">
+      <header class="header">
+        <div class="logo-alura">
+          <img src="./source/img/logo.png" alt="" />
+        </div>
+      </header>
+      <div id="textarea">
+        <textarea
+          id="input"
+          cols="37"
+          rows="14"
+          required
+          placeholder="Texto a codificar o decodificar: "
+        ></textarea>
+      </div>
+      <section class="botones">
+        <button onclick="codificar(), mostrarDiv()" id="encode-button">
+          <p>Codificar</p>
+        </button>
+        <button onclick="decodificar(), mostrarDiv()" id="decode-button">
+          <p>Decodificar</p>
+        </button>
+      </section>
+      <div id="seccion-mensaje">
+        <img src="./source/img/muñeco.png" alt="" />
+        <d.meiv class="mensaje">
+          <h1>Ningún mensaje fue encontrado o acabas de copiar el texto</h1>
+          <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+        </d.meiv>
+        <div id="seccion-respuesta">
+          <textarea id="resultado"></textarea>
+          <button id="copiar">
+            <p>Copiar</p>
+          </button>
+        </div>
+      </div>
+      <p class="alerta">
+        <img src="./source/img/alerta.png" alt="alerta" /> Solo letras
+        minúsculas y sin acentos
+      </p>
+    </div>
+    <footer>
+      <ol>
+        <li>
+          <a target="_blank" href="https://www.aluracursos.com/">
+            <img src="./source/img/logo.svg" alt="Logo Alura" class="img-footer"/>
+          </a>
+        </li>
+        <li>
+          <a target="_blank" href="https://github.com/IsaacJSandovalC">
+            <img src="./source/img/github.svg" alt="Logo Github" class="img-footer" />
+          </a>
+        </li>
+        <li>
+          <a target="_blank" href="https://www.linkedin.com/in/isaac-sandoval-993243255">
+            <img src="./source/img/linkedin.svg" alt="Logo Linkedlin" class="img-footer" />
+          </a>
+        </li>
+      </ol>
+    </footer>
+  </body>
+  <script src="./source/js/script.js"></script>
+</html>
