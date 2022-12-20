@@ -1,81 +1,40 @@
 function codificar() {
-  var texto = document.getElementById("input").value;
-  var serccion_texto = document.getElementById("seccion-mensaje");
-  let resultado = "";
+  var cadena = document.getElementById("input").value;
 
-  for (let caracter of texto) {
-    if (caracter >= "a" && caracter <= "z") {
-      if (caracter === "e") {
-        resultado += "enter";
-      } else if (caracter === "i") {
-        resultado += "imes";
-      } else if (caracter === "a") {
-        resultado += "ai";
-      } else if (caracter === "o") {
-        resultado += "ober";
-      } else if (caracter === "u") {
-        resultado += "ufat";
-      } else {
-        resultado += caracter;
-      }
-    } else {
-      resultado += caracter;
-    }
-  }
+  cadena = cadena.replace(/a/g, "ai");
+  cadena = cadena.replace(/e/g, "enter");
+  cadena = cadena.replace(/i/g, "imes");
+  cadena = cadena.replace(/o/g, "ober");
+  cadena = cadena.replace(/u/g, "ufat");
 
-  if (texto.match(/[A-Z]/) !== null) {
+  if (cadena.match(/[A-Z]/) !== null) {
     document.getElementById("resultado").value =
       "No podemos decodificar esto ya que contiene letras mayusculas o caracteres especiales";
-  } else if (texto.match(/[^a-zA-Z0-9\s]/) !== null) {
+  } else if (cadena.match(/[^a-zA-Z0-9\s]/) !== null) {
     document.getElementById("resultado").value =
       "No podemos decodificar esto ya que contiene letras mayusculas o caracteres especiales";
   } else {
-    document.getElementById("resultado").value = resultado;
+    document.getElementById("resultado").value = cadena;
   }
 }
 
 function decodificar() {
-  var texto = document.getElementById("input").value;
+  var cadena = document.getElementById("input").value;
+  
+  cadena = cadena.replace(/enter/g, "e");
+  cadena = cadena.replace(/imes/g, "i");
+  cadena = cadena.replace(/ai/g, "a");
+  cadena = cadena.replace(/ober/g, "o");
+  cadena = cadena.replace(/ufat/g, "u");
 
-  let resultado = "";
-  for (let i = 0; i < texto.length; i++) {
-    if (texto[i] === "e" && texto[i + 1] === "n") {
-      resultado += "e";
-      i += 2;
-    } else if (texto[i] === "i" && texto[i + 1] === "m") {
-      resultado += "i";
-      i += 2;
-    } else if (texto[i] === "a" && texto[i + 1] === "i") {
-      resultado += "a";
-      i += 1;
-    } else if (
-      texto[i] === "o" &&
-      texto[i + 1] === "b" &&
-      texto[i + 2] === "e" &&
-      texto[i + 3] === "r"
-    ) {
-      resultado += "o";
-      i += 3;
-    } else if (
-      texto[i] === "u" &&
-      texto[i + 1] === "f" &&
-      texto[i + 2] === "a" &&
-      texto[i + 3] === "t"
-    ) {
-      resultado += "u";
-      i += 3;
-    } else {
-      resultado += texto[i];
-    }
-  }
-  if (texto.match(/[A-Z]/) !== null) {
+  if (cadena.match(/[A-Z]/) !== null) {
     document.getElementById("resultado").value =
       "No podemos decodificar esto ya que contiene letras mayusculas o caracteres especiales";
-  } else if (texto.match(/[^a-zA-Z0-9\s]/) !== null) {
+  } else if (cadena.match(/[^a-zA-Z0-9\s]/) !== null) {
     document.getElementById("resultado").value =
       "No podemos decodificar esto ya que contiene letras mayusculas o caracteres especiales";
   } else {
-    document.getElementById("resultado").value = resultado;
+    document.getElementById("resultado").value = cadena;
   }
 }
 
