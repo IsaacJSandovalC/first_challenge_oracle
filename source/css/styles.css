@@ -16,28 +16,41 @@ html {
     transition: opacity 0.5s ease-in-out;
 }
 
-
 body,
 html.visible {
     opacity: 1;
 }
 
 html.touch {
-    width: none;
-    height: none;
-    margin: none;
-    padding: none;
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
 }
+
 
 footer {
     display: flex;
     justify-content: center;
-    position: inherit;
+    position: absolute;
     width: 100%;
-    min-height: 15vh;
-    top: 990px;
+    height: 60px;
+    min-height: 126px;
+    top: 981px;
+
 }
 
+footer .seccion_reservado{
+    position: absolute;
+    top: 85px;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 10px;
+    background-color: #292929;
+    color: #F3F5FC;
+    width: 100%;
+    text-align: center;
+}
 
 footer a {
     text-decoration: none;
@@ -46,7 +59,11 @@ footer a {
 
 ol {
     margin: auto;
+    position: absolute;
+    top: 39px;
+    left: 584px;
     padding-inline-start: 0px;
+
 }
 
 ol li {
@@ -191,10 +208,16 @@ ol li {
     height: 824px;
     left: 1000px;
     top: 126px;
+    opacity: 1;
     background: #FFFFFF;
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
     border-radius: 32px;
     margin-bottom: 5rem;
+    transition: opacity .5s ease-in-out;
+}
+
+#seccion-respuesta.visible{
+    opacity: 0;
 }
 
 #seccion-mensaje img {
@@ -209,7 +232,7 @@ ol li {
 #seccion-respuesta {
     position: absolute;
     width: 400px;
-    height: 824px;
+    height: 850px;
     left: 0;
     top: 0;
     background: #FFFFFF;
@@ -271,7 +294,7 @@ ol li {
 #resultado {
     position: absolute;
     width: 336px;
-    height: 676px;
+    height: 700px;
     left: 31px;
     top: 29px;
     resize: none;
@@ -294,7 +317,7 @@ ol li {
     width: 336px;
     height: 67px;
     left: 34px;
-    top: 731px;
+    top: 756px;
     transition: .5s all;
     border: 1px solid #0A3871;
     border-radius: 24px;
@@ -722,6 +745,16 @@ ol li {
         padding: 0;
     }
 
+
+    ol {
+        margin: 0;
+        position: unset;
+        top: 0px;
+        left: 584px;
+        padding: 0;
+        padding-inline-start: 0px;
+    
+    }
     footer {
         display: flex;
         justify-content: center;
@@ -1013,3 +1046,5 @@ ol li {
         font-size: 80%;
     }
 }
+
+
