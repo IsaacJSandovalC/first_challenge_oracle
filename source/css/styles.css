@@ -7,6 +7,8 @@ html {
     position: relative;
     width: 1440px;
     height: 1024px;
+    max-width: 1440px;
+    max-height: 1024px;
 
     flex-wrap: wrap;
     margin: 0;
@@ -21,14 +23,6 @@ html.visible {
     opacity: 1;
 }
 
-html.touch {
-    width: 0;
-    height: 0;
-    margin: 0;
-    padding: 0;
-}
-
-
 footer {
     display: flex;
     justify-content: center;
@@ -36,11 +30,11 @@ footer {
     width: 100%;
     height: 60px;
     min-height: 126px;
-    top: 1148px;
+    top: 899px;
 
 }
 
-footer .seccion_reservado{
+footer .seccion_reservado {
     position: absolute;
     top: 85px;
     font-weight: bold;
@@ -105,7 +99,7 @@ ol li {
 }
 
 
-.logo-oracle-alura{
+.logo-oracle-alura {
     position: absolute;
     width: 318px;
     height: 66px;
@@ -114,7 +108,7 @@ ol li {
 }
 
 
-.logo-oracle-alura img{
+.logo-oracle-alura img {
     position: absolute;
     width: 311px;
     height: 67px;
@@ -126,7 +120,7 @@ ol li {
     /* Ingrese el texto aqui */
     position: absolute;
     resize: none;
-    left: 120px;
+    left: 142px;
     top: 132px;
     font-style: normal;
     font-size: 32px;
@@ -135,6 +129,8 @@ ol li {
     background-color: transparent;
     border-color: transparent;
     color: #0A3871;
+    transition: opacity 0.5s ease-in-out;
+
 }
 
 #input::placeholder {
@@ -222,18 +218,17 @@ ol li {
 #seccion-mensaje {
     position: absolute;
     width: 400px;
-    height: 824px;
+    height: 739px;
     left: 1000px;
     top: 126px;
     opacity: 1;
     background: #FFFFFF;
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
     border-radius: 32px;
-    margin-bottom: 5rem;
     transition: opacity .5s ease-in-out;
 }
 
-#seccion-respuesta.visible{
+#seccion-respuesta.visible {
     opacity: 0;
 }
 
@@ -249,7 +244,7 @@ ol li {
 #seccion-respuesta {
     position: absolute;
     width: 400px;
-    height: 850px;
+    height: 739px;
     left: 0;
     top: 0;
     background: #FFFFFF;
@@ -259,7 +254,7 @@ ol li {
     transition: opacity .5s ease-in-out;
 }
 
-#seccion-respuesta.visible{
+#seccion-respuesta.visible {
     opacity: 1;
 }
 
@@ -274,7 +269,7 @@ ol li {
     width: 336px;
     height: 122px;
     left: 31px;
-    top: 540px;
+    top: 482px;
 }
 
 .mensaje h1 {
@@ -311,7 +306,7 @@ ol li {
 #resultado {
     position: absolute;
     width: 336px;
-    height: 700px;
+    height: 592px;
     left: 31px;
     top: 29px;
     resize: none;
@@ -334,7 +329,7 @@ ol li {
     width: 336px;
     height: 67px;
     left: 34px;
-    top: 756px;
+    top: 648px;
     transition: .5s all;
     border: 1px solid #0A3871;
     border-radius: 24px;
@@ -371,7 +366,7 @@ ol li {
     width: 229px;
     height: 18px;
     left: 139px;
-    top: 842px;
+    top: 736px;
     font-size: 11px;
 }
 
@@ -389,7 +384,7 @@ ol li {
     width: 680px;
     height: 67px;
     left: 131px;
-    top: 883px;
+    top: 776px;
 }
 
 
@@ -400,6 +395,7 @@ ol li {
 
     body,
     html {
+        display: flex;
         position: relative;
         width: 768px;
         height: 1384px;
@@ -422,8 +418,8 @@ ol li {
         display: flex;
         justify-content: center;
         position: absolute;
-        width: 104%;
-        top: 1339px;
+        width: 100%;
+        top: 897px;
     }
 
 
@@ -458,7 +454,7 @@ ol li {
 
     .logo-alura {
         position: absolute;
-        left: 4.27%;
+        left: 0.27%;
         right: 69.2%;
         top: 0%;
         bottom: 0%;
@@ -475,18 +471,18 @@ ol li {
     #textarea {
         position: absolute;
         width: 688px;
-        height: 578px;
-        left: 38px;
-        top: 163px;
+        height: 308px;
+        left: 40px;
+        top: 155px;
     }
 
     #input {
         position: absolute;
         resize: none;
         width: 645px;
-        height: 555px;
-        top: 2px;
-        left: 10px;
+        height: 308px;
+        top: 0;
+        left: 0;
         padding: 1rem;
         font-style: normal;
         font-weight: 400;
@@ -516,7 +512,7 @@ ol li {
         width: 688px;
         height: 67px;
         left: 40px;
-        top: 791px;
+        top: 507px;
     }
 
     #encode-button {
@@ -605,8 +601,8 @@ ol li {
         position: absolute;
         width: 640px;
         height: 111px;
-        left: 32px;
-        top: 885px;
+        left: 40px;
+        top: 600px;
         background: #FFFFFF;
         box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
         border-radius: 32px;
@@ -668,10 +664,9 @@ ol li {
         gap: 32px;
         position: absolute;
         width: 640px;
-        height: 299px;
+        height: 230px;
         left: 0px;
         top: 0px;
-
         background: #FFFFFF;
         box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
         border-radius: 32px;
@@ -679,7 +674,7 @@ ol li {
 
     #resultado {
         width: 650px;
-        height: 220px;
+        height: 177px;
         resize: none;
         position: absolute;
         font-style: normal;
@@ -705,11 +700,11 @@ ol li {
         padding: 24px;
         gap: 8px;
         width: 642px;
-        height: 67px;
-        top: 266px;
+        height: 38px;
+        top: 220px;
         left: 34px;
         border: 1px solid #0A3871;
-        border-radius: 24px;
+        border-radius: 19px;
         flex: none;
         order: 1;
         align-self: stretch;
@@ -723,7 +718,7 @@ ol li {
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
-        line-height: 19px;
+        line-height: 0px;
         text-align: center;
         flex: content;
         color: #0A3871;
@@ -740,8 +735,8 @@ ol li {
         position: absolute;
         width: 250px;
         height: 18px;
-        left: 42px;
-        top: 743px;
+        left: 45px;
+        top: 467px;
         font-size: 80%;
 
     }
@@ -758,28 +753,42 @@ ol li {
         width: 374px;
         height: 1270px;
         background: #F3F5FC;
+        opacity: 1;
         margin: 0;
         padding: 0;
+    }
+
+    html.visible {
+        height: 1270px;
     }
 
 
     ol {
         margin: 0;
-        position: unset;
-        top: 0px;
-        left: 584px;
+        position: absolute;
+        top: 39px;
+        left: 114px;
         padding: 0;
         padding-inline-start: 0px;
-    
+        display: flex;
+
     }
+
+    .logo-oracle-alura {
+        display: none;
+    }
+
     footer {
         display: flex;
         justify-content: center;
-        width: 102%;
+        width: 100%;
         position: inherit;
         top: 1148px;
     }
 
+    footer p {
+        margin-inline-start: 14px;
+    }
 
     .header {
         position: absolute;
