@@ -62,13 +62,13 @@ document.getElementById("copiar").addEventListener("click", function () {
   document.execCommand("copy");
   textarea_input.value = "";
 
-  seccion_respuesta.classList.remove("visible"); // Oculta el div
+  seccion_respuesta.classList.remove("visible"); 
   serccion_texto.classList.remove("visible");
 });
 
-const body = document.querySelector("body,html");
+const contenedor = document.querySelector("#contenedor");
 setTimeout(function () {
-  body.classList.add("visible");
+  contenedor.classList.add("visible");
 }, 500);
 
 const fechaElement = document.getElementById("fecha");
