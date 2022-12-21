@@ -7,22 +7,20 @@ html {
     position: relative;
     width: 1440px;
     height: 1024px;
-
     flex-wrap: wrap;
     margin: 0;
     padding: 0;
     background: #F3F5FC;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
 }
 
 #contenedor {
     width: 1440px;
     height: 898px;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
 }
 
-body,
-html.visible {
+#contenedor.visible{
     opacity: 1;
 }
 
@@ -364,7 +362,6 @@ ol li {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0 0 1rem 0;
     gap: 8px;
     position: absolute;
     width: 229px;
@@ -734,7 +731,6 @@ ol li {
         display: flex;
         flex-direction: row;
         align-items: center;
-        padding: 0 0 1rem 0;
         gap: 8px;
         position: absolute;
         width: 250px;
@@ -1066,7 +1062,6 @@ ol li {
         display: flex;
         flex-direction: row;
         align-items: center;
-        padding: 0 0 1rem 0;
         gap: 8px;
         position: absolute;
         width: 250px;
