@@ -16,6 +16,11 @@ html {
     transition: opacity 0.5s ease-in-out;
 }
 
+#contenedor {
+    width: 1440px;
+    height: 898px;
+}
+
 body,
 html.visible {
     opacity: 1;
@@ -54,7 +59,7 @@ ol {
     margin: auto;
     position: absolute;
     top: 39px;
-    left: 584px;
+    left: 610.93px;
 
 }
 
