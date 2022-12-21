@@ -36,7 +36,7 @@ footer {
     width: 100%;
     height: 60px;
     min-height: 126px;
-    top: 981px;
+    top: 1148px;
 
 }
 
@@ -96,13 +96,31 @@ ol li {
     top: 5px;
 }
 
-.logo-alura img {
+.logo-alura .not-found {
     position: absolute;
     left: 36.67%;
     right: 37.43%;
     top: 0%;
     bottom: 0%;
 }
+
+
+.logo-oracle-alura{
+    position: absolute;
+    width: 318px;
+    height: 66px;
+    left: 42px;
+    top: 25px;
+}
+
+
+.logo-oracle-alura img{
+    position: absolute;
+    width: 311px;
+    height: 67px;
+    left: 0;
+}
+
 
 #input {
     /* Ingrese el texto aqui */
@@ -219,7 +237,7 @@ ol li {
     opacity: 0;
 }
 
-#seccion-mensaje img {
+#seccion-mensaje .not-found {
     position: absolute;
     width: 336px;
     height: 304px;
@@ -403,10 +421,9 @@ ol li {
     footer {
         display: flex;
         justify-content: center;
-        position: inherit;
-        width: 100%;
-        min-height: 9vh;
-        top: 1257px;
+        position: absolute;
+        width: 104%;
+        top: 1339px;
     }
 
 
@@ -418,6 +435,7 @@ ol li {
     ol {
         margin: auto;
         padding-inline-start: 0px;
+        position: unset;
     }
 
     ol li {
@@ -757,7 +775,7 @@ ol li {
     footer {
         display: flex;
         justify-content: center;
-        width: 100%;
+        width: 102%;
         position: inherit;
         top: 1148px;
     }
