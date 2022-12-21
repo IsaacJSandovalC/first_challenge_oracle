@@ -7,8 +7,6 @@ html {
     position: relative;
     width: 1440px;
     height: 1024px;
-    max-width: 1440px;
-    max-height: 1024px;
 
     flex-wrap: wrap;
     margin: 0;
