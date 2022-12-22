@@ -390,7 +390,7 @@ ol li {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 768px) and (min-width: 376px){
     * {
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
     }
