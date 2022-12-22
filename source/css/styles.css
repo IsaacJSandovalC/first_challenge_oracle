@@ -408,12 +408,10 @@ ol li {
     }
 
 
-    html.touch {
-        width: none;
-        height: none;
-        margin: none;
-        padding: none;
-
+    #contenedor.visible{
+        width: 768px;
+        height: 1384px;
+        opacity: 1;
     }
 
     footer {
@@ -482,7 +480,7 @@ ol li {
         position: absolute;
         resize: none;
         width: 645px;
-        height: 308px;
+        height: 287px;
         top: 0;
         left: 0;
         padding: 1rem;
@@ -743,7 +741,7 @@ ol li {
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 375px) and (min-width: 0px){
     * {
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
     }
@@ -759,8 +757,10 @@ ol li {
         padding: 0;
     }
 
-    html.visible {
+    #contenedor.visible{
+        width: 374px;
         height: 1270px;
+        opacity: 1;
     }
 
 
@@ -827,7 +827,7 @@ ol li {
         position: absolute;
         resize: none;
         width: 307px;
-        height: 241px;
+        height: 278px;
         left: 6px;
         top: 30px;
         padding: 1rem;
