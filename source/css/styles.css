@@ -38,9 +38,10 @@ footer {
 
 footer .seccion_reservado {
     position: absolute;
-    top: 85px;
+    top: 95px;
     font-weight: bold;
     padding: 10px;
+    margin: 0;
     font-size: 10px;
     background-color: #292929;
     color: #F3F5FC;
@@ -420,7 +421,7 @@ ol li {
         justify-content: center;
         position: absolute;
         width: 100%;
-        top: 1259px;
+        top: 1257px;
     }
 
 
