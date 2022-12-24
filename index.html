@@ -10,50 +10,53 @@
   </head>
   <body>
     <div id="contenedor">
-      <header class="header">
-        <div class="logo-alura">
-          <img src="./source/img/logo.svg" alt="" />
-        </div>
-      </header>
-
-      <section id="textarea">
-        <textarea
-          id="input"
-          cols="37"
-          rows="12"
-          required
-          placeholder="Texto a codificar o decodificar: "
-        ></textarea>
-      </section>
-      
-      <section class="botones">
-        <button onclick="codificar(), mostrarDiv()" id="encode-button">
-          <p>Codificar</p>
-        </button>
-        <button onclick="decodificar(), mostrarDiv()" id="decode-button">
-          <p>Decodificar</p>
-        </button>
-      </section>
-      <section id="seccion-mensaje">
-        <div class="logo-oracle-alura">
-          <img src="./source/img/oracle-aluraespanhol.png" alt="">
-        </div>
-        <img class="not-found" src="./source/img/muñeco.png" alt="" />
-        <d.meiv class="mensaje">
-          <h1>Ningún mensaje fue encontrado o acabas de copiar el texto</h1>
-          <p>Ingresa el texto que desees encriptar o desencriptar.</p>
-        </d.meiv>
-        <div id="seccion-respuesta">
-          <textarea id="resultado" readonly></textarea>
-          <button id="copiar">
-            <p>Copiar</p>
+      <div class="box">
+        <header class="header">
+          <div class="logo-alura">
+            <img src="./source/img/logo.svg" alt="" />
+          </div>
+        </header>
+  
+        <section id="textarea">
+          <textarea
+            id="input"
+            cols="37"
+            rows="12"
+            required
+            placeholder="Texto a codificar o decodificar: "
+          ></textarea>
+        </section>
+        
+        <section class="botones">
+          <button onclick="codificar(), mostrarDiv()" id="encode-button">
+            <p>Codificar</p>
           </button>
-        </div>
-      </section>
-      <p class="alerta">
-        <img src="./source/img/alerta.png" alt="alerta" /> Solo letras
-        minúsculas y sin acentos
-      </p>
+          <button onclick="decodificar(), mostrarDiv()" id="decode-button">
+            <p>Decodificar</p>
+          </button>
+        </section>
+        <section id="seccion-mensaje">
+          <div class="logo-oracle-alura">
+            <img src="./source/img/oracle-aluraespanhol.png" alt="">
+          </div>
+          <img class="not-found" src="./source/img/muñeco.png" alt="" />
+          <d.meiv class="mensaje">
+            <h1>Ningún mensaje fue encontrado o acabas de copiar el texto</h1>
+            <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+          </d.meiv>
+          <div id="seccion-respuesta">
+            <textarea id="resultado" readonly></textarea>
+            <button id="copiar">
+              <p>Copiar</p>
+            </button>
+          </div>
+        </section>
+        <p class="alerta">
+          <img src="./source/img/alerta.png" alt="alerta" /> Solo letras
+          minúsculas y sin acentos
+        </p>
+
+      </div>
       <footer>
         <ol>
           <li>

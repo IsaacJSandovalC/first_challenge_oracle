@@ -389,8 +389,7 @@ ol li {
     top: 776px;
 }
 
-
-@media (max-width: 768px) and (min-width: 376px){
+@media (min-width: 376px) and (max-width: 1029px){
     * {
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
     }
@@ -399,7 +398,7 @@ ol li {
     html {
         display: flex;
         position: relative;
-        width: 768px;
+        width: 781px;
         height: 1384px;
         background: #F3F5FC;
         margin: 0;
@@ -409,9 +408,17 @@ ol li {
 
 
     #contenedor.visible{
-        width: 768px;
+        position: absolute;
+        width: 1029px;
         height: 1384px;
         opacity: 1;
+    }
+
+    #contenedor .box{
+        position: absolute;
+        width: 781px;
+        height: 1384px;
+        left: 124px;
     }
 
     footer {
@@ -741,7 +748,7 @@ ol li {
     }
 }
 
-@media (max-width: 375px) and (min-width: 0px){
+@media (max-width: 548px) and (min-width: 0px){
     * {
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
     }
@@ -764,11 +771,20 @@ ol li {
     }
 
 
+    #contenedor .box{
+        position: absolute;
+        width: 374px;
+        height: 1270px;
+        left: 94px;
+        opacity: 1;
+    }
+
+
     ol {
         margin: 0;
         position: absolute;
         top: 39px;
-        left: 114px;
+        left: 193px;
         padding: 0;
         padding-inline-start: 0px;
         display: flex;
@@ -782,7 +798,7 @@ ol li {
     footer {
         display: flex;
         justify-content: center;
-        width: 100%;
+        width: 548px;
         position: absolute;
         top: 1146px;
     }
