@@ -120,7 +120,6 @@ ol li {
 
 
 #input {
-    /* Ingrese el texto aqui */
     position: absolute;
     resize: none;
     left: 142px;
@@ -239,7 +238,6 @@ ol li {
     position: absolute;
     width: 336px;
     height: 304px;
-    left: 31px;
     top: 120px;
 }
 
@@ -398,7 +396,7 @@ ol li {
     html {
         display: flex;
         position: relative;
-        width: 781px;
+        width: 1029px;
         height: 1384px;
         background: #F3F5FC;
         margin: 0;
@@ -416,9 +414,9 @@ ol li {
 
     #contenedor .box{
         position: absolute;
-        width: 781px;
+        width: 886px;
         height: 1384px;
-        left: 124px;
+        left: 73px;
     }
 
     footer {
@@ -477,8 +475,8 @@ ol li {
 
     #textarea {
         position: absolute;
-        width: 688px;
-        height: 308px;
+        width: 794px;
+        height: 351px;
         left: 40px;
         top: 155px;
     }
@@ -486,8 +484,8 @@ ol li {
     #input {
         position: absolute;
         resize: none;
-        width: 645px;
-        height: 287px;
+        width: 774px;
+        height: 330px;
         top: 0;
         left: 0;
         padding: 1rem;
@@ -505,7 +503,7 @@ ol li {
 
     #input::placeholder {
         color: #0A3871;
-        font-size: 20px;
+        font-size: 30px;
     }
 
     .botones {
@@ -516,11 +514,20 @@ ol li {
         gap: 24px;
 
         position: absolute;
-        width: 688px;
+        width: 764px;
         height: 67px;
-        left: 40px;
-        top: 507px;
+        left: 59px;
+        top: 560px;
     }
+
+    .logo-oracle-alura {
+        position: absolute;
+        width: 318px;
+        height: 424px;
+        left: 70px;
+        top: 68px;
+    }
+    
 
     #encode-button {
         display: flex;
@@ -528,17 +535,10 @@ ol li {
         align-items: flex-start;
         padding: 24px;
         gap: 8px;
-
-        width: 332px;
+        width: 370px;
         height: 67px;
-
-        /* Dark blue/dark-blue-300 */
-
         background: #0A3871;
         border-radius: 24px;
-
-        /* Inside auto layout */
-
         flex: none;
         order: 0;
         flex-grow: 1;
@@ -550,8 +550,8 @@ ol li {
         height: 19px;
         margin: 0 auto;
         font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
+        font-weight: bold;
+        font-size: 20px;    
         line-height: 19px;
         text-align: center;
         color: #FFFFFF;
@@ -559,24 +559,17 @@ ol li {
 
     #decode-button {
         box-sizing: border-box;
-
-        /* Auto layout */
-
         display: flex;
         flex-direction: row;
         align-items: flex-start;
         padding: 24px;
         gap: 8px;
 
-        width: 332px;
+        width: 370px;
         height: 67px;
-
-        /* Dark blue/dark-blue-300 */
 
         border: 1px solid #0A3871;
         border-radius: 24px;
-
-        /* Inside auto layout */
 
         flex: none;
         order: 1;
@@ -588,8 +581,8 @@ ol li {
         height: 19px;
         margin: 0 auto;
         font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
+        font-weight: bold;
+        font-size: 20px;    
         line-height: 19px;
         text-align: center;
         color: #0A3871;
@@ -606,10 +599,10 @@ ol li {
         padding: 32px;
         gap: 32px;
         position: absolute;
-        width: 640px;
-        height: 111px;
-        left: 40px;
-        top: 600px;
+        width: 730px;
+        height: 498px;
+        left: 43px;
+        top: 662px;
         background: #FFFFFF;
         box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
         border-radius: 32px;
@@ -623,8 +616,8 @@ ol li {
         gap: 16px;
         width: 637px;
         height: 114px;
-        top: 28px;
-        left: 36px;
+        top: 133px;
+        left: 261px;    
         flex: none;
         order: 0;
         align-self: stretch;
@@ -633,22 +626,22 @@ ol li {
 
 
     .mensaje h1 {
-        width: 637px;
-        height: 14px;
+        width: 341px;
+        height: 120px;
         font-style: normal;
-        font-size: 20px;
-        margin: 17px auto;
+        font-size: 32px;
+        margin: 0 auto;
         line-height: 120%;
         text-align: center;
         color: #343A40;
     }
 
     .mensaje p {
-        width: 637px;
-        height: 14px;
+        width: 341px;
+        height: 119px;
         font-style: normal;
         margin: 0 auto;
-        font-size: 16px;
+        font-size: 26px;
         line-height: 150%;
         text-align: center;
         color: #495057;
@@ -658,19 +651,15 @@ ol li {
         flex-grow: 0;
     }
 
-    #seccion-mensaje img {
-        display: none;
-    }
-
-
     #seccion-respuesta {
+        /* opacity: 1; */
         flex-direction: column;
         align-items: flex-start;
         padding: 32px;
         margin-bottom: 1rem;
         gap: 32px;
         position: absolute;
-        width: 640px;
+        width: 697px;
         height: 230px;
         left: 0px;
         top: 0px;
@@ -680,7 +669,7 @@ ol li {
     }
 
     #resultado {
-        width: 650px;
+        width: 698px;
         height: 177px;
         resize: none;
         position: absolute;
@@ -709,7 +698,7 @@ ol li {
         width: 642px;
         height: 38px;
         top: 220px;
-        left: 34px;
+        left: 60px;
         border: 1px solid #0A3871;
         border-radius: 19px;
         flex: none;
@@ -741,8 +730,8 @@ ol li {
         position: absolute;
         width: 470px;
         height: 18px;
-        left: 45px;
-        top: 467px;
+        left: 65px;
+        top: 511px;
         font-size: 80%;
 
     }
@@ -765,7 +754,8 @@ ol li {
     }
 
     #contenedor.visible{
-        width: 374px;
+        position: absolute;
+        width: 548px;
         height: 1270px;
         opacity: 1;
     }
@@ -773,9 +763,9 @@ ol li {
 
     #contenedor .box{
         position: absolute;
-        width: 374px;
+        width: 458px;
         height: 1270px;
-        left: 94px;
+        left: 49px;
         opacity: 1;
     }
 
@@ -833,8 +823,8 @@ ol li {
 
     #textarea {
         position: absolute;
-        width: 354px;
-        height: 308px;
+        width: 419px;
+        height: 323px;
         left: 11px;
         top: 110px;
     }
@@ -842,7 +832,7 @@ ol li {
     #input {
         position: absolute;
         resize: none;
-        width: 307px;
+        width: 399px;
         height: 278px;
         left: 6px;
         top: 30px;
@@ -870,9 +860,9 @@ ol li {
         padding: 0px;
         gap: 24px;
         position: absolute;
-        width: 343px;
+        width: 396px;
         height: 158px;
-        left: 10px;
+        left: 30px;
         top: 485px;
         margin-top: 1rem;
     }
@@ -883,7 +873,7 @@ ol li {
         align-items: flex-start;
         padding: 24px;
         gap: 8px;
-        width: 355px;
+        width: 396px;
         height: 67px;
         background: #0A3871;
         border-radius: 24px;
@@ -912,7 +902,7 @@ ol li {
         align-items: flex-start;
         padding: 24px;
         gap: 8px;
-        width: 355px;
+        width: 396px;
         height: 67px;
         border: 1px solid #0A3871;
         border-radius: 24px;
@@ -945,7 +935,7 @@ ol li {
         padding: 32px;
         gap: 32px;
         position: absolute;
-        width: 250px;
+        width: 322px;
         height: 148px;
         left: 31px;
         top: 707px;
@@ -956,16 +946,14 @@ ol li {
 
     .mensaje {
         display: flex;
-        left: 30px;
-        top: 24px;
+        left: 26px;
+        top: 43px;
         flex-direction: column;
         align-items: flex-start;
         padding: 0px;
         gap: 16px;
-
-        width: 263px;
-        height: 122px;
-
+        width: 339px;
+        height: 112px;
         flex: none;
         order: 0;
         align-self: stretch;
@@ -974,18 +962,18 @@ ol li {
 
 
     .mensaje h1 {
-        width: 250px;
+        width: 331px;
         height: 58px;
         font-style: normal;
         font-size: 19px;
-        margin: 10px auto;
+        margin: 0px auto;
         line-height: 120%;
         text-align: center;
         color: #343A40;
     }
 
     .mensaje p {
-        width: 250px;
+        width: 331px;
         height: 48px;
         font-style: normal;
         margin: 0 auto;
@@ -1011,11 +999,10 @@ ol li {
         margin-bottom: 1rem;
         gap: 32px;
         position: absolute;
-        width: 250px;
+        width: 322px;
         height: 361px;
         left: 0px;
         top: 0px;
-
         background: #FFFFFF;
         box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
         border-radius: 32px;
@@ -1048,7 +1035,7 @@ ol li {
         align-items: flex-start;
         padding: 24px;
         gap: 8px;
-        width: 267px;
+        width: 344px;
         height: 67px;
         left: 24px;
         top: 341px;
@@ -1066,7 +1053,7 @@ ol li {
         margin: 0 auto;
         font-style: normal;
         font-weight: 400;
-        font-size: 16px;
+        font-size: 20px;
         line-height: 19px;
         text-align: center;
         flex: content;
@@ -1083,7 +1070,7 @@ ol li {
         position: absolute;
         width: 345px;
         height: 18px;
-        left: 16px;
+        left: 35px;
         top: 451px;
         font-size: 80%;
     }
