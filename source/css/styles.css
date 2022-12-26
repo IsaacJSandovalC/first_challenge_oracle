@@ -2,46 +2,51 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
 }
 
-body,
-html {
+body {
     position: relative;
+    background: #f3f5fc;
     width: 1440px;
-    height: 1024px;
-    flex-wrap: wrap;
-    margin: 0;
-    padding: 0;
-    background: #F3F5FC;
+    height: 930px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 #contenedor {
-    width: 1440px;
-    height: 898px;
+    width: 100%;
+    height: 230vh;
+    min-height: 725px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+
     transition: opacity 0.5s ease-in-out;
     opacity: 0;
 }
 
-#contenedor.visible{
+#contenedor.visible {
     opacity: 1;
 }
 
 footer {
     display: flex;
+    margin: 0 auto;
+
     justify-content: center;
     position: absolute;
     width: 100%;
-    height: 60px;
+    height: 18px;
     bottom: 0;
-    min-height: 126px;
-    top: 898px;
-
+    /* min-height: 126px; */
 }
 
 footer .seccion_reservado {
     position: absolute;
-    top: 95px;
     font-weight: bold;
     padding: 10px;
-    margin: 0;
+    margin-top: 50px;
     font-size: 10px;
     background-color: #292929;
     color: #F3F5FC;
@@ -56,9 +61,7 @@ footer a {
 
 ol {
     margin: auto;
-    position: absolute;
-    top: 39px;
-    left: 610.93px;
+    display: flex;
 
 }
 
@@ -122,8 +125,8 @@ ol li {
 #input {
     position: absolute;
     resize: none;
-    left: 142px;
-    top: 132px;
+    left: 66px;
+    top: 60px;
     font-style: normal;
     font-size: 32px;
     line-height: 150%;
@@ -138,6 +141,20 @@ ol li {
 #input::placeholder {
     color: #0A3871;
     font-weight: bold;
+}
+
+.botones {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    margin: 0 0 10px 0;
+    gap: 40px;
+    position: absolute;
+    width: 680px;
+    height: 67px;
+    left: 131px;
+    top: 776px;
 }
 
 #encode-button {
@@ -374,20 +391,7 @@ ol li {
     width: 6%;
 }
 
-.botones {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 40px;
-    position: absolute;
-    width: 680px;
-    height: 67px;
-    left: 131px;
-    top: 776px;
-}
-
-@media (min-width: 376px) and (max-width: 1029px){
+@media (min-width: 376px) and (max-width: 1029px) {
     * {
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
     }
@@ -405,14 +409,14 @@ ol li {
     }
 
 
-    #contenedor.visible{
+    #contenedor.visible {
         position: absolute;
         width: 1029px;
         height: 1384px;
         opacity: 1;
     }
 
-    #contenedor .box{
+    #contenedor .box {
         position: absolute;
         width: 886px;
         height: 1384px;
@@ -477,8 +481,7 @@ ol li {
         position: absolute;
         width: 794px;
         height: 351px;
-        left: 40px;
-        top: 155px;
+
     }
 
     #input {
@@ -486,8 +489,8 @@ ol li {
         resize: none;
         width: 774px;
         height: 330px;
-        top: 0;
-        left: 0;
+        top: 77px;
+        left: 21px;
         padding: 1rem;
         font-style: normal;
         font-weight: 400;
@@ -527,7 +530,7 @@ ol li {
         left: 70px;
         top: 68px;
     }
-    
+
 
     #encode-button {
         display: flex;
@@ -551,7 +554,7 @@ ol li {
         margin: 0 auto;
         font-style: normal;
         font-weight: bold;
-        font-size: 20px;    
+        font-size: 20px;
         line-height: 19px;
         text-align: center;
         color: #FFFFFF;
@@ -582,7 +585,7 @@ ol li {
         margin: 0 auto;
         font-style: normal;
         font-weight: bold;
-        font-size: 20px;    
+        font-size: 20px;
         line-height: 19px;
         text-align: center;
         color: #0A3871;
@@ -617,7 +620,7 @@ ol li {
         width: 637px;
         height: 114px;
         top: 133px;
-        left: 261px;    
+        left: 261px;
         flex: none;
         order: 0;
         align-self: stretch;
@@ -736,7 +739,7 @@ ol li {
     }
 }
 
-@media (max-width: 548px) and (min-width: 0px){
+@media (max-width: 548px) and (min-width: 0px) {
     * {
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
     }
@@ -752,7 +755,7 @@ ol li {
         padding: 0;
     }
 
-    #contenedor.visible{
+    #contenedor.visible {
         position: absolute;
         width: 548px;
         height: 1270px;
@@ -760,7 +763,7 @@ ol li {
     }
 
 
-    #contenedor .box{
+    #contenedor .box {
         position: absolute;
         width: 458px;
         height: 1270px;
@@ -834,7 +837,7 @@ ol li {
         width: 399px;
         height: 278px;
         left: 6px;
-        top: 30px;
+        top: 45px;
         padding: 1rem;
         font-style: normal;
         font-weight: 400;
