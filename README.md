@@ -24,7 +24,7 @@ inserción del texto que será encriptado o desencriptado, y el usuario debe pod
 El resultado debe ser mostrado en la pantalla.
 
 <div style="text-align: right">
-  <img width="65%" alt="Im isaac sandoval" src="screencapture-isaacjsandovalc-github-io-first-challenge-oracle-2022-12-20-08_45_42.png" />
+  <img width="65%" alt="ENCRIPTADOR" src="encriptDOR.png" />
 </div>
 
 ## Link
