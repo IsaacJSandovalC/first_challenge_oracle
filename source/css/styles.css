@@ -38,6 +38,7 @@ footer {
     position: absolute;
     width: 100%;
     height: 18px;
+    top: 920px;
     bottom: 0;
     /* min-height: 126px; */
 }
@@ -121,6 +122,21 @@ ol li {
     left: 0;
 }
 
+#textarea{
+    position: absolute;
+    resize: none;
+    left: 66px;
+    top: 60px;
+    font-style: normal;
+    font-size: 32px;
+    line-height: 150%;
+    padding: 1rem;
+    background-color: transparent;
+    border-color: transparent;
+    color: #0A3871;
+    transition: opacity 0.5s ease-in-out;
+}
+
 
 #input {
     position: absolute;
@@ -135,7 +151,6 @@ ol li {
     border-color: transparent;
     color: #0A3871;
     transition: opacity 0.5s ease-in-out;
-
 }
 
 #input::placeholder {
@@ -396,8 +411,7 @@ ol li {
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
     }
 
-    body,
-    html {
+    body {
         display: flex;
         position: relative;
         width: 1029px;
@@ -425,12 +439,16 @@ ol li {
 
     footer {
         display: flex;
+        margin: 0 auto;
+    
         justify-content: center;
         position: absolute;
         width: 100%;
-        top: 1257px;
+        height: 18px;
+        top: 1298px;
     }
 
+    
 
     footer a {
         text-decoration: none;
@@ -481,7 +499,6 @@ ol li {
         position: absolute;
         width: 794px;
         height: 351px;
-
     }
 
     #input {
@@ -744,8 +761,7 @@ ol li {
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
     }
 
-    body,
-    html {
+    body,html {
         position: relative;
         width: 374px;
         height: 1270px;
@@ -757,7 +773,7 @@ ol li {
 
     #contenedor.visible {
         position: absolute;
-        width: 548px;
+        width: 374px;
         height: 1270px;
         opacity: 1;
     }
@@ -765,19 +781,15 @@ ol li {
 
     #contenedor .box {
         position: absolute;
-        width: 458px;
+        width: 374px;
         height: 1270px;
-        left: 49px;
+        left: 0px;
         opacity: 1;
     }
 
 
     ol {
-        margin: 0;
         position: absolute;
-        top: 39px;
-        left: 193px;
-        padding: 0;
         padding-inline-start: 0px;
         display: flex;
 
@@ -789,11 +801,25 @@ ol li {
 
     footer {
         display: flex;
+        margin: 0 auto;
         justify-content: center;
-        width: 548px;
         position: absolute;
-        top: 1146px;
+        width: 100%;
+        height: 18px;
+        top: 1176px;
     }
+
+
+footer .seccion_reservado {
+    position: absolute;
+    font-weight: bold;
+    padding: 10px;
+    margin-top: 50px;
+    font-size: 10px;
+    background-color: #292929;
+    color: #F3F5FC;
+    text-align: center;
+}
 
     footer p {
         margin-inline-start: 14px;
@@ -825,16 +851,16 @@ ol li {
 
     #textarea {
         position: absolute;
-        width: 419px;
+        width: 334px;
         height: 323px;
         left: 11px;
-        top: 110px;
+        top: 72px;
     }
 
     #input {
         position: absolute;
         resize: none;
-        width: 399px;
+        width: 320px;
         height: 278px;
         left: 6px;
         top: 45px;
@@ -862,9 +888,9 @@ ol li {
         padding: 0px;
         gap: 24px;
         position: absolute;
-        width: 396px;
+        width: 346px;
         height: 158px;
-        left: 30px;
+        left: 24px;
         top: 485px;
         margin-top: 1rem;
     }
@@ -875,7 +901,7 @@ ol li {
         align-items: flex-start;
         padding: 24px;
         gap: 8px;
-        width: 396px;
+        width: 346px;
         height: 67px;
         background: #0A3871;
         border-radius: 24px;
@@ -904,7 +930,7 @@ ol li {
         align-items: flex-start;
         padding: 24px;
         gap: 8px;
-        width: 396px;
+        width: 346px;
         height: 67px;
         border: 1px solid #0A3871;
         border-radius: 24px;
@@ -937,7 +963,7 @@ ol li {
         padding: 32px;
         gap: 32px;
         position: absolute;
-        width: 322px;
+        width: 260px;
         height: 148px;
         left: 31px;
         top: 707px;
@@ -948,13 +974,13 @@ ol li {
 
     .mensaje {
         display: flex;
-        left: 26px;
-        top: 43px;
+        left: 24px;
+        top: 38px;
         flex-direction: column;
         align-items: flex-start;
         padding: 0px;
-        gap: 16px;
-        width: 339px;
+        gap: 23px;
+        width: 277px;
         height: 112px;
         flex: none;
         order: 0;
@@ -964,7 +990,7 @@ ol li {
 
 
     .mensaje h1 {
-        width: 331px;
+        width: 277px;
         height: 58px;
         font-style: normal;
         font-size: 19px;
@@ -975,7 +1001,7 @@ ol li {
     }
 
     .mensaje p {
-        width: 331px;
+        width: 277px;
         height: 48px;
         font-style: normal;
         margin: 0 auto;
@@ -995,13 +1021,15 @@ ol li {
 
 
     #seccion-respuesta {
+opacity: 1;
+
         flex-direction: column;
         align-items: flex-start;
         padding: 32px;
         margin-bottom: 1rem;
         gap: 32px;
         position: absolute;
-        width: 322px;
+        width: 260px;
         height: 361px;
         left: 0px;
         top: 0px;
@@ -1011,7 +1039,7 @@ ol li {
     }
 
     #resultado {
-        width: 265px;
+        width: 272px;
         height: 294px;
         resize: none;
         position: absolute;
@@ -1037,7 +1065,7 @@ ol li {
         align-items: flex-start;
         padding: 24px;
         gap: 8px;
-        width: 344px;
+        width: 279px;
         height: 67px;
         left: 24px;
         top: 341px;
