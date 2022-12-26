@@ -24,7 +24,7 @@ inserción del texto que será encriptado o desencriptado, y el usuario debe pod
 El resultado debe ser mostrado en la pantalla.
 
 <div style="text-align: right">
-  <img width="65%" alt="ENCRIPTADOR" src="encriptDOR.png" />
+  <img width="65%" alt="ENCRIPTADOR" src="encriptador.png" />
 </div>
 
 ## Link
