@@ -3,7 +3,7 @@
 }
 
 body {
-    display: grid;
+    position: relative;
     background: #f3f5fc;
     width: 1440px;
     height: 930px;
@@ -11,9 +11,6 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: center;
 }
 
 #contenedor {
@@ -779,26 +776,15 @@ ol li {
         width: 100%;
         height: 1270px;
         opacity: 1;
-        margin: 0 auto;
-
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        justify-content: center;
     }
 
 
     #contenedor .box {
         position: absolute;
-        width: 82%;
+        width: 93%;
         height: 1270px;
-        left: 11%;    
+        left: 14px;
         opacity: 1;
-        margin: 0 auto;
-
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        justify-content: center;
-
     }
 
 
@@ -818,9 +804,8 @@ ol li {
         margin: 0 auto;
         justify-content: center;
         position: absolute;
-        width: 100%;
         height: 7%;
-        top: 1176px;
+        top: 1178px;
     }
 
 
@@ -828,18 +813,17 @@ ol li {
         position: absolute;
         font-weight: bold;
         padding: 10px;
-        margin: 0 auto;
+        margin-top: 50px;
         font-size: 10px;
         background-color: #292929;
         color: #F3F5FC;
         text-align: center;
-        top: 56%;
     }
 
 
     .header {
         position: absolute;
-        width: 375px;
+        width: 133px;
         height: 96px;
         left: 0px;
         top: 0px;
@@ -874,7 +858,7 @@ ol li {
         resize: none;
         width: 320px;
         height: 278px;
-        left: 0px;
+        left: 6px;
         top: 45px;
         padding: 1rem;
         font-style: normal;
@@ -894,14 +878,15 @@ ol li {
     }
 
     .botones {
+        display: flex;
         flex-direction: column;
         align-items: flex-start;
         padding: 0px;
         gap: 24px;
         position: absolute;
-        width: 326px;
+        width: 346px;
         height: 158px;
-        left: 13px;
+        left: 7px;
         top: 485px;
         margin-top: 1rem;
     }
@@ -912,7 +897,7 @@ ol li {
         align-items: flex-start;
         padding: 24px;
         gap: 8px;
-        width: 325px;
+        width: 346px;
         height: 67px;
         background: #0A3871;
         border-radius: 24px;
@@ -923,7 +908,7 @@ ol li {
     }
 
     #encode-button p {
-        width: 274px;
+        width: 295px;
         height: 19px;
         margin: 0 auto;
         font-style: normal;
@@ -941,7 +926,7 @@ ol li {
         align-items: flex-start;
         padding: 24px;
         gap: 8px;
-        width: 325px;
+        width: 346px;
         height: 67px;
         border: 1px solid #0A3871;
         border-radius: 24px;
@@ -952,7 +937,7 @@ ol li {
     }
 
     #decode-button p {
-        width: 274px;
+        width: 295px;
         height: 19px;
         margin: 0 auto;
         font-style: normal;
@@ -976,7 +961,7 @@ ol li {
         position: absolute;
         width: 260px;
         height: 148px;
-        left: 13px;
+        left: 20px;
         top: 707px;
         background: #FFFFFF;
         box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
@@ -1108,12 +1093,10 @@ ol li {
         align-items: center;
         gap: 8px;
         position: absolute;
-        width: 345px;
+        width: 305px;
         height: 18px;
-        left: 35px;
-        top: 451px;
+        left: 10px;
+        top: 451px;    
         font-size: 80%;
     }
 }
-
-
