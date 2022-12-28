@@ -2,8 +2,7 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
 
 }
-
-body, html {
+body {
     position: absolute;
     background: #f3f5fc;
     min-width: 100%;
