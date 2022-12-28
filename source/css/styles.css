@@ -15,11 +15,9 @@ body {
 }
 
 #contenedor {
-    position: absolute;
     width: 1440px;
     min-height: 725px;
-    left: 70px;
-    top: 0;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -33,7 +31,8 @@ body {
 
 
 .box{
-
+    display: flex;
+    margin: 0 auto;
     width: 100%;
 }
 
