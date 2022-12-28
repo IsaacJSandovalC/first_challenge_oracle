@@ -3,19 +3,20 @@
 
 }
 
-body {
-    position: relative;
+body, html {
+    position: absolute;
     background: #f3f5fc;
-    width: 100%;
+    min-width: 100%;
     height: 930px;
-    margin: 0 auto;
+    margin: 0;
     display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
 }
 
 #contenedor {
-    width: 100%;
+    width: 1440px;
     min-height: 725px;
     display: flex;
     flex-direction: column;
@@ -32,26 +33,24 @@ body {
 .box{
 
     width: 100%;
-    height: 230vh;
 }
 
 footer {
-    display: flex;
+    display: block;
     margin: 0 auto;
-    justify-content: center;
     position: absolute;
     width: 100%;
     height: 7%;
     top: 920px;
     bottom: 0;
-    /* min-height: 126px; */
 }
 
 footer .seccion_reservado {
+    margin-block-start: 0;
     position: absolute;
     font-weight: bold;
     padding: 10px;
-    margin-top: 71px;
+    margin-top: 25px;
     font-size: 10px;
     background-color: #292929;
     color: #F3F5FC;
@@ -65,9 +64,9 @@ footer a {
 
 
 ol {
-    margin: auto;
+    margin: 0 auto;
     display: flex;
-
+    justify-content: center;
 }
 
 ol li {
@@ -129,7 +128,7 @@ ol li {
 #textarea {
     position: absolute;
     resize: none;
-    left: 131px;
+    left: 70px;
     top: 115px;
     width: 896px;
     height: 610px;
@@ -164,7 +163,7 @@ ol li {
     position: absolute;
     width: 680px;
     height: 67px;
-    left: 131px;
+    left: 76px;
     top: 776px;
 }
 
@@ -246,11 +245,11 @@ ol li {
 }
 
 #seccion-mensaje {
-    position: absolute;
+    position: relative;
     width: 400px;
     height: 739px;
-    left: 1084px;
-    top: 126px;
+    left: 1005px;
+    top: 44px;
     opacity: 1;
     background: #FFFFFF;
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
@@ -392,7 +391,7 @@ ol li {
     position: absolute;
     width: 229px;
     height: 18px;
-    left: 139px;
+    left: 81px;
     top: 736px;
     font-size: 11px;
 }
