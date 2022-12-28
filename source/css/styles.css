@@ -1,5 +1,6 @@
 * {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+
 }
 
 body {
@@ -15,7 +16,6 @@ body {
 
 #contenedor {
     width: 100%;
-    height: 230vh;
     min-height: 725px;
     display: flex;
     flex-direction: column;
@@ -30,7 +30,9 @@ body {
 
 
 .box{
-    left: 0rem;
+
+    width: 100%;
+    height: 230vh;
 }
 
 footer {
@@ -127,24 +129,16 @@ ol li {
 #textarea {
     position: absolute;
     resize: none;
-    left: 66px;
-    top: 60px;
-    font-style: normal;
-    font-size: 32px;
-    line-height: 150%;
-    padding: 1rem;
-    background-color: transparent;
-    border-color: transparent;
-    color: #0A3871;
-    transition: opacity 0.5s ease-in-out;
+    left: 131px;
+    top: 115px;
+    width: 896px;
+    height: 610px;
 }
 
 
 #input {
     position: absolute;
     resize: none;
-    left: 66px;
-    top: 60px;
     font-style: normal;
     font-size: 32px;
     line-height: 150%;
@@ -181,7 +175,7 @@ ol li {
     align-items: flex-start;
     padding: 24px;
     gap: 8px;
-    width: 380px;
+    width: 420px;
     height: 67px;
     background: #0A3871;
     border-radius: 24px;
@@ -219,7 +213,7 @@ ol li {
     align-items: flex-start;
     padding: 24px;
     gap: 8px;
-    width: 380px;
+    width: 420px;
     height: 67px;
     background: #D8DFE8;
     border: 1px solid #0A3871;
@@ -255,7 +249,7 @@ ol li {
     position: absolute;
     width: 400px;
     height: 739px;
-    left: 1000px;
+    left: 1084px;
     top: 126px;
     opacity: 1;
     background: #FFFFFF;
