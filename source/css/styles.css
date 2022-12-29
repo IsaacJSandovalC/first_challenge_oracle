@@ -41,22 +41,23 @@ footer {
     margin: 0 auto;
     position: absolute;
     width: 100%;
-    height: 7%;
-    top: 920px;
+    height: 9.5%;
+    top: 961px;
     bottom: 0;
+    background-color: #292929;
 }
 
 footer .seccion_reservado {
     margin-block-start: 0;
     position: absolute;
     font-weight: bold;
-    padding: 10px;
-    margin-top: 25px;
+    margin: 13px auto;
     font-size: 10px;
     background-color: #292929;
-    color: #F3F5FC;
+    color: #f3f5fc;
     width: 100%;
     text-align: center;
+    margin-block-end: 0em;
 }
 
 footer a {
@@ -65,9 +66,11 @@ footer a {
 
 
 ol {
-    margin: 0 auto;
+    margin: -1px;
+    padding-bottom: 10px;
     display: flex;
     justify-content: center;
+    background-color: #f3f5fc;
 }
 
 ol li {
@@ -433,16 +436,15 @@ ol li {
     }
 
     footer {
-        display: flex;
+        display: block;
         margin: 0 auto;
-
         justify-content: center;
         position: absolute;
         width: 100%;
         top: 1298px;
+        height: 7%;
+        background-color: #292929;
     }
-
-
 
     footer a {
         text-decoration: none;
@@ -450,7 +452,7 @@ ol li {
 
 
     ol {
-        margin: auto;
+        margin: -1;
         padding-inline-start: 0px;
         position: unset;
     }
@@ -783,9 +785,9 @@ ol li {
 
 
     ol {
-        position: absolute;
+        margin: -1;
         padding-inline-start: 0px;
-        display: flex;
+        position: flex;
 
     }
 
@@ -794,22 +796,20 @@ ol li {
     }
 
     footer {
-        display: flex;
+        display: block;
         margin: 0 auto;
         justify-content: center;
         position: absolute;
-        height: 7%;
+        width: 100%;
         top: 1178px;
+        height: 8%;
+        background-color: #292929;
     }
 
 
     footer .seccion_reservado {
-        position: absolute;
         font-weight: bold;
-        padding: 10px;
-        margin-top: 50px;
         font-size: 10px;
-        background-color: #292929;
         color: #F3F5FC;
         text-align: center;
     }
