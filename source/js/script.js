@@ -20,7 +20,7 @@ function codificar() {
 
 function decodificar() {
   var cadena = document.getElementById("input").value;
-  
+
   cadena = cadena.replace(/enter/g, "e");
   cadena = cadena.replace(/imes/g, "i");
   cadena = cadena.replace(/ai/g, "a");
@@ -62,7 +62,7 @@ document.getElementById("copiar").addEventListener("click", function () {
   document.execCommand("copy");
   textarea_input.value = "";
 
-  seccion_respuesta.classList.remove("visible"); 
+  seccion_respuesta.classList.remove("visible");
   serccion_texto.classList.remove("visible");
 });
 
