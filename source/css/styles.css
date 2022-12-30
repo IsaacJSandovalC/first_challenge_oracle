@@ -1,7 +1,8 @@
 * {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
-
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
+
 body {
     position: absolute;
     background: #f3f5fc;
@@ -30,7 +31,7 @@ body {
 }
 
 
-.box{
+.box {
     display: flex;
     margin: 0 auto;
     width: 100%;
@@ -410,9 +411,9 @@ ol li {
     }
 
     body {
-        display: flex;
+        display: absolute;
         position: relative;
-        width: 1029px;
+        width: 855px;
         height: 1384px;
         background: #F3F5FC;
         margin: 0;
@@ -423,16 +424,15 @@ ol li {
 
     #contenedor.visible {
         position: absolute;
-        width: 1029px;
+        width: 855px;
         height: 1384px;
         opacity: 1;
     }
 
     #contenedor .box {
         position: absolute;
-        width: 886px;
+        width: 100%;
         height: 1384px;
-        left: 73px;
     }
 
     footer {
@@ -445,6 +445,7 @@ ol li {
         height: 7%;
         background-color: #292929;
     }
+
 
     footer a {
         text-decoration: none;
@@ -493,17 +494,17 @@ ol li {
 
     #textarea {
         position: absolute;
-        width: 794px;
+        width: 656px;
         height: 351px;
+        top: 125px;
+        left: 102px;
     }
 
     #input {
         position: absolute;
         resize: none;
-        width: 774px;
+        width: 636px;
         height: 330px;
-        top: 77px;
-        left: 21px;
         padding: 1rem;
         font-style: normal;
         font-weight: 400;
@@ -527,21 +528,32 @@ ol li {
         flex-direction: row;
         align-items: flex-start;
         padding: 0px;
-        gap: 24px;
-
+        gap: 26px;
         position: absolute;
-        width: 764px;
+        width: 664px;
         height: 67px;
-        left: 59px;
+        left: 102px;
         top: 560px;
     }
 
     .logo-oracle-alura {
         position: absolute;
-        width: 318px;
+        width: 284px;
         height: 424px;
-        left: 70px;
+        left: 47px;
         top: 68px;
+    }
+
+    .logo-oracle-alura img {
+        position: absolute;
+        width: 94%;
+        height: 15%;
+    }
+
+    #seccion-mensaje .not-found{
+        position: absolute;
+        width: 94%;
+        height: 62%;
     }
 
 
@@ -551,7 +563,7 @@ ol li {
         align-items: flex-start;
         padding: 24px;
         gap: 8px;
-        width: 370px;
+        width: 230px;
         height: 67px;
         background: #0A3871;
         border-radius: 24px;
@@ -580,13 +592,10 @@ ol li {
         align-items: flex-start;
         padding: 24px;
         gap: 8px;
-
-        width: 370px;
+        width: 230px;
         height: 67px;
-
         border: 1px solid #0A3871;
         border-radius: 24px;
-
         flex: none;
         order: 1;
         flex-grow: 1;
@@ -609,18 +618,17 @@ ol li {
 
 
     #seccion-mensaje {
-        display: flex;
         flex-direction: column;
         align-items: flex-start;
         padding: 32px;
         gap: 32px;
         position: absolute;
-        width: 730px;
+        width: 607px;
         height: 498px;
-        left: 43px;
+        left: 99px;
         top: 662px;
         background: #FFFFFF;
-        box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+        box-shadow: 0px 24px 32px -8px rgb(0 0 0 / 8%);
         border-radius: 32px;
     }
 
@@ -630,10 +638,10 @@ ol li {
         align-items: flex-start;
         padding: 0px;
         gap: 16px;
-        width: 637px;
+        width: 297px;
         height: 114px;
-        top: 133px;
-        left: 261px;
+        top: 170px;
+        left: 334px;
         flex: none;
         order: 0;
         align-self: stretch;
@@ -642,10 +650,10 @@ ol li {
 
 
     .mensaje h1 {
-        width: 341px;
-        height: 120px;
+        width: 297px;
+        height: 105px;
         font-style: normal;
-        font-size: 32px;
+        font-size: 27px;
         margin: 0 auto;
         line-height: 120%;
         text-align: center;
@@ -653,11 +661,11 @@ ol li {
     }
 
     .mensaje p {
-        width: 341px;
-        height: 119px;
+        width: 297px;
+        height: 70px;
         font-style: normal;
         margin: 0 auto;
-        font-size: 26px;
+        font-size: 21px;
         line-height: 150%;
         text-align: center;
         color: #495057;
@@ -674,7 +682,7 @@ ol li {
         margin-bottom: 1rem;
         gap: 32px;
         position: absolute;
-        width: 730px;
+        width: 607px;
         height: 330px;
         left: 0px;
         top: 0px;
@@ -684,7 +692,7 @@ ol li {
     }
 
     #resultado {
-        width: 740px;
+        width: 617px;
         height: 250px;
         resize: none;
         position: absolute;
@@ -710,10 +718,10 @@ ol li {
         align-items: flex-start;
         padding: 24px;
         gap: 8px;
-        width: 642px;
+        width: 543px;
         height: 38px;
         top: 308px;
-        left: 81px;
+        left: 66px;
         border: 1px solid #0A3871;
         border-radius: 19px;
         flex: none;
@@ -745,7 +753,7 @@ ol li {
         position: absolute;
         width: 470px;
         height: 18px;
-        left: 65px;
+        left: 102px;
         top: 511px;
         font-size: 80%;
 
@@ -759,7 +767,7 @@ ol li {
 
     body {
         position: relative;
-        width: 100%;
+        width: 548px;
         height: 1270px;
         background: #F3F5FC;
         opacity: 1;
@@ -769,7 +777,7 @@ ol li {
 
     #contenedor.visible {
         position: absolute;
-        width: 100%;
+        width: 548px;
         height: 1270px;
         opacity: 1;
     }
@@ -777,9 +785,8 @@ ol li {
 
     #contenedor .box {
         position: absolute;
-        width: 93%;
+        width: 100%;
         height: 1270px;
-        left: 18px;
         opacity: 1;
     }
 
@@ -819,7 +826,7 @@ ol li {
         position: absolute;
         width: 133px;
         height: 96px;
-        left: 0px;
+        left: 20px;
         top: 0px;
     }
 
@@ -841,19 +848,17 @@ ol li {
 
     #textarea {
         position: absolute;
-        width: 334px;
+        width: 463px;
         height: 323px;
-        left: 0px;
+        left: 38px;
         top: 72px;
     }
 
     #input {
         position: absolute;
         resize: none;
-        width: 320px;
+        width: 443px;
         height: 278px;
-        left: 6px;
-        top: 45px;
         padding: 1rem;
         font-style: normal;
         font-weight: 400;
@@ -880,7 +885,7 @@ ol li {
         position: absolute;
         width: 346px;
         height: 158px;
-        left: 7px;
+        left: 51px;
         top: 485px;
         margin-top: 1rem;
     }
@@ -891,7 +896,7 @@ ol li {
         align-items: flex-start;
         padding: 24px;
         gap: 8px;
-        width: 346px;
+        width: 432px;
         height: 67px;
         background: #0A3871;
         border-radius: 24px;
@@ -920,7 +925,7 @@ ol li {
         align-items: flex-start;
         padding: 24px;
         gap: 8px;
-        width: 346px;
+        width: 432px;
         height: 67px;
         border: 1px solid #0A3871;
         border-radius: 24px;
@@ -953,9 +958,9 @@ ol li {
         padding: 32px;
         gap: 32px;
         position: absolute;
-        width: 260px;
+        width: 359px;
         height: 148px;
-        left: 20px;
+        left: 54px;
         top: 707px;
         background: #FFFFFF;
         box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
@@ -964,13 +969,13 @@ ol li {
 
     .mensaje {
         display: flex;
-        left: 24px;
-        top: 38px;
+        left: 27px;
+        top: 50px;
         flex-direction: column;
         align-items: flex-start;
         padding: 0px;
-        gap: 23px;
-        width: 277px;
+        gap: 5px;
+        width: 376px;
         height: 112px;
         flex: none;
         order: 0;
@@ -980,7 +985,7 @@ ol li {
 
 
     .mensaje h1 {
-        width: 277px;
+        width: 376px;
         height: 58px;
         font-style: normal;
         font-size: 19px;
@@ -991,7 +996,7 @@ ol li {
     }
 
     .mensaje p {
-        width: 277px;
+        width: 376px;
         height: 48px;
         font-style: normal;
         margin: 0 auto;
@@ -1011,14 +1016,13 @@ ol li {
 
 
     #seccion-respuesta {
-
         flex-direction: column;
         align-items: flex-start;
         padding: 32px;
         margin-bottom: 1rem;
         gap: 32px;
         position: absolute;
-        width: 260px;
+        width: 359px;
         height: 361px;
         left: 0px;
         top: 0px;
@@ -1028,7 +1032,7 @@ ol li {
     }
 
     #resultado {
-        width: 272px;
+        width: 371px;
         height: 294px;
         resize: none;
         position: absolute;
@@ -1054,9 +1058,9 @@ ol li {
         align-items: flex-start;
         padding: 24px;
         gap: 8px;
-        width: 279px;
+        width: 353px;
         height: 67px;
-        left: 24px;
+        left: 34px;    
         top: 341px;
         border: 1px solid #0A3871;
         border-radius: 24px;
@@ -1089,8 +1093,8 @@ ol li {
         position: absolute;
         width: 305px;
         height: 18px;
-        left: 10px;
-        top: 451px;    
+        left: 55px;
+        top: 451px;
         font-size: 80%;
     }
 }
