@@ -413,7 +413,7 @@ ol li {
     body {
         display: absolute;
         position: relative;
-        width: 855px;
+        width: 1029px;
         height: 1384px;
         background: #F3F5FC;
         margin: 0;
@@ -424,7 +424,7 @@ ol li {
 
     #contenedor.visible {
         position: absolute;
-        width: 855px;
+        width: 1029px;
         height: 1384px;
         opacity: 1;
     }
@@ -494,16 +494,16 @@ ol li {
 
     #textarea {
         position: absolute;
-        width: 656px;
+        width: 742px;
         height: 351px;
         top: 125px;
-        left: 102px;
+        left: 141px;
     }
 
     #input {
         position: absolute;
         resize: none;
-        width: 636px;
+        width: 722px;
         height: 330px;
         padding: 1rem;
         font-style: normal;
@@ -530,9 +530,9 @@ ol li {
         padding: 0px;
         gap: 26px;
         position: absolute;
-        width: 664px;
+        width: 717px;
         height: 67px;
-        left: 102px;
+        left: 148px;
         top: 560px;
     }
 
@@ -563,7 +563,7 @@ ol li {
         align-items: flex-start;
         padding: 24px;
         gap: 8px;
-        width: 230px;
+        width: 287px;
         height: 67px;
         background: #0A3871;
         border-radius: 24px;
@@ -574,7 +574,7 @@ ol li {
 
 
     #encode-button p {
-        width: 295px;
+        width: 272px;
         height: 19px;
         margin: 0 auto;
         font-style: normal;
@@ -592,7 +592,7 @@ ol li {
         align-items: flex-start;
         padding: 24px;
         gap: 8px;
-        width: 230px;
+        width: 287px;
         height: 67px;
         border: 1px solid #0A3871;
         border-radius: 24px;
@@ -602,7 +602,7 @@ ol li {
     }
 
     #decode-button p {
-        width: 295px;
+        width: 272px;
         height: 19px;
         margin: 0 auto;
         font-style: normal;
@@ -623,9 +623,9 @@ ol li {
         padding: 32px;
         gap: 32px;
         position: absolute;
-        width: 607px;
+        width: 653px;
         height: 498px;
-        left: 99px;
+        left: 146px;
         top: 662px;
         background: #FFFFFF;
         box-shadow: 0px 24px 32px -8px rgb(0 0 0 / 8%);
@@ -641,7 +641,7 @@ ol li {
         width: 297px;
         height: 114px;
         top: 170px;
-        left: 334px;
+        left: 357px;
         flex: none;
         order: 0;
         align-self: stretch;
@@ -682,7 +682,7 @@ ol li {
         margin-bottom: 1rem;
         gap: 32px;
         position: absolute;
-        width: 607px;
+        width: 653px;
         height: 330px;
         left: 0px;
         top: 0px;
@@ -692,7 +692,7 @@ ol li {
     }
 
     #resultado {
-        width: 617px;
+        width: 664px;
         height: 250px;
         resize: none;
         position: absolute;
@@ -718,10 +718,10 @@ ol li {
         align-items: flex-start;
         padding: 24px;
         gap: 8px;
-        width: 543px;
+        width: 587px;
         height: 38px;
         top: 308px;
-        left: 66px;
+        left: 65px;
         border: 1px solid #0A3871;
         border-radius: 19px;
         flex: none;
