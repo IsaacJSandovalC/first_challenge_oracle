@@ -406,10 +406,6 @@ ol li {
 }
 
 @media (min-width: 376px) and (max-width: 1029px) {
-    * {
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
-    }
-
     body {
         display: absolute;
         position: relative;
@@ -761,10 +757,6 @@ ol li {
 }
 
 @media (max-width: 548px) and (min-width: 0px) {
-    * {
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
-    }
-
     body {
         position: relative;
         width: 548px;
