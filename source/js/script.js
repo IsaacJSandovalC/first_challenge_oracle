@@ -1,3 +1,32 @@
+let intro = document.querySelector('.intro');
+let logo = document.querySelector('.logo');
+let logo_parts = document.querySelectorAll('.logo-parts');
+
+window.addEventListener('DOMContentLoaded', () => {
+    setTimeout(() => {
+        logo_parts.forEach((spam, index) => {
+            setTimeout(() => {
+                spam.classList.add('active');
+            }, (index + 1) * 100);
+        });
+
+        setTimeout(() => {
+            logo_parts.forEach((spam, index) => {
+                setTimeout(() => {
+                    spam.classList.remove('active');
+                    spam.classList.add('fade');
+                }, (spam + 1) * 50);
+            });
+        }, 3000);
+
+
+        setTimeout(() => {
+            intro.style.top = '-300vh';
+        }, 2300);
+    });
+});
+
+
 function codificar() {
   var cadena = document.getElementById("input").value;
 
@@ -76,3 +105,4 @@ const hoy = new Date();
 const fechaISO = hoy.toISOString();
 const fecha = fechaISO.split("T")[0];
 fechaElement.textContent = fecha;
+
