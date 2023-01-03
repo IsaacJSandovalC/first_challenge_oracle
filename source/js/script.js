@@ -1,3 +1,4 @@
+// Animaciones de la intro
 let intro = document.querySelector('.intro');
 let logo = document.querySelector('.logo');
 let logo_parts = document.querySelectorAll('.logo-parts');
@@ -26,7 +27,7 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-
+// Codificacion
 function codificar() {
   var cadena = document.getElementById("input").value;
 
@@ -47,6 +48,7 @@ function codificar() {
   }
 }
 
+// Decodificacion
 function decodificar() {
   var cadena = document.getElementById("input").value;
 
@@ -67,6 +69,7 @@ function decodificar() {
   }
 }
 
+// Mostrar la seccion de resultados
 function mostrarDiv() {
   var seccion_respuesta = document.getElementById("seccion-respuesta");
   var serccion_texto = document.getElementById("seccion-mensaje");
@@ -80,6 +83,7 @@ function mostrarDiv() {
   }
 }
 
+// Acciones en el boton copiar
 document.getElementById("copiar").addEventListener("click", function () {
   var seccion_respuesta = document.getElementById("seccion-respuesta");
   var serccion_texto = document.getElementById("seccion-mensaje");
@@ -100,9 +104,9 @@ setTimeout(function () {
   contenedor.classList.add("visible");
 }, 500);
 
+
+// Fecha footer
 const fechaElement = document.getElementById("fecha");
-const hoy = new Date();
-const fechaISO = hoy.toISOString();
-const fecha = fechaISO.split("T")[0];
-fechaElement.textContent = fecha;
+const hoy = new Date().getFullYear();
+fechaElement.textContent = hoy;
 
