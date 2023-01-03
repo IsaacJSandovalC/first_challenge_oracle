@@ -26,8 +26,3 @@ El resultado debe ser mostrado en la pantalla.
 <div style="text-align: right">
   <img width="65%" alt="ENCRIPTADOR" src="encriptador.png" />
 </div>
-
-## Link
-
-aqui te dejo el link para que la puedas usar:
-[Click aqui](https://isaacjsandovalc.github.io/first_challenge_oracle/)
